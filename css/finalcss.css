@@ -1,0 +1,367 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01-Dec-2018, 14:30:52
+    Author     : Lizie
+*/
+img{
+    width:100%;
+    height:auto;
+}
+.parallax { 
+    position: relative;
+    background-attachment: fixed;    
+    height:350px;
+    width:100%;
+    margin:auto;
+    background-color:grey;
+    align-content:center;
+}
+
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    text-align:center;
+
+}
+
+.topnav-link {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin:auto;
+}
+
+.topnav-link:hover {
+    background-color: #ddd;
+    color: black;
+}
+.nav-center{
+    text-align:center;
+    margin:auto;
+
+}
+.content {
+    padding: 16px;
+    min-height: 1000px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color:rgba(50,50,50,0.8);
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "arial", sans-serif;
+    margin: 0px;
+}
+
+.row {
+    width: 100%;
+    display: table;
+}
+
+.row-heading {
+    margin-left: 15px;
+    padding-top: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-25 {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+.col-33 {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+}
+.img-card{
+    width:100%;
+    padding:5px
+
+}
+
+.col-40{
+    width: 40%;
+   
+    float: left;
+}
+.col-50 {
+    width: 50%;
+    float: left;
+}
+.col-60{
+    width: 60%;   
+    float: left;
+}
+
+.col-80 {
+    width: 80%;
+    float: left;
+}
+
+
+.card {
+    text-align: center;
+    padding: 10px;
+}
+
+.card img {
+    display: block;
+    margin:auto;
+    width: 70%;
+    height: auto;
+}
+
+code {
+    font-size: 13px
+}
+
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+.page {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 600px) {
+    .parallax{
+        display:none;
+    }
+    .col-25 {
+        width: 100%;
+        float: none;
+    }
+.col-33 {
+    width: 100%;
+   
+    float: none;
+}
+    .col-40 {
+        width: 100%;
+        float: none;
+    }
+    .col-50 {
+        width: 100%;
+        float: none;
+    }
+    .col-60 {
+        width: 100%;
+        float: none;
+    }
+
+    .col-80 {
+        width: 100%;
+        float: none;
+    }
+    
+
+
+
+
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+
+
+    a.anchor {
+        display: block;
+        position: relative;
+        top: -100px;
+        visibility: hidden;
+    }
+
+    code {
+        font-size: 9px;
+    }
+
+}
+#icon {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+
+
+    .responsive {
+        display: block;
+    }
+
+}
+.card1{
+    background-image:url('../img/mock.jpg') ;
+    background-size:cover;
+    margin:20px;
+    border-radius:5px;
+    height:300px;
+    position:relative;
+
+
+
+
+}
+.card2{
+    background-image:url('../img/theme.jpg') ;
+    background-size:cover;
+    margin:20px;
+    border-radius:5px;
+    height:300px;
+    position:relative;
+}
+.base-text{
+    position:absolute;
+    bottom:0px;
+    background-color:white;
+    padding:0px 30px 0px 30px;
+    width:100%;
+
+    text-align:center;
+}
+a.post{
+    text-decoration:none;
+    color:#10172e;
+
+
+    padding:30px;
+}
+a.post:hover{
+    color:grey;
+}
+
+div.card1:hover{
+    transform:translate(0px,10px);
+    box-shadow:5px 5px  3px lightslategrey;
+}
+div.card2:hover{
+    transform:translate(0px,10px);
+    box-shadow:5px 5px  3px lightslategrey;
+}
+h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size:40px;
+    text-align:center;
+}
+.banner{
+    height:180px;
+    background-color:#8D363C;
+}
+.banner-text{
+    color:white;
+    text-align: center;
+    padding:5px 20px 5px 20px;
+}
+.door{
+    height:400px;
+   border-radius:50%;
+}
+.blog{
+
+    text-align:center;
+
+    padding:10px;
+    width:80%;
+    margin:auto;
+
+    font-family:arial, sans-serif;
+
+
+}
+
+a.bloglink{
+    text-decoration:none;
+    color:white;
+    background-color:white;
+    border-radius:3px;
+    padding:10px;
+    border:1px solid black;
+    background-color:#8D363C;
+}
+a.bloglink:hover{
+    color:grey;
+}
+.footer{
+    width:100%;
+    text-align: center;
+
+    padding:20px;
+    margin:auto;
+    background-color:whitesmoke;
+}
+.fa-instagram{
+    color:black;
+    height:50px;
+    text-decoration:none;
+    padding:5px;
+}
+.fa-linkedin {
+
+    color: black;
+    text-decoration:none;
+    padding:5px;
+}
+.fa:hover{
+    color:grey;
+}

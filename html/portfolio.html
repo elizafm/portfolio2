@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<link href="../css/finalcss.css" rel="stylesheet" type="text/css"/>
+
+<div class="banner">
+    <h1 class="banner-text">Portfolio</h1>
+    <p class="banner-text">
+        This portfolio showcases some of my latest surface design projects within interiors, stationary and active wear departments.
+    </p>
+</div>
+<br>
+
+<div id="images">
+    <div class="row">
+        <div id="col1" class="col-33">
+        </div>
+        <div id="col2" class="col-33">
+        </div>
+        <div id="col3" class="col-33">
+        </div>
+
+    </div>
+</div>
+<script>
+    var imgFiles = ["port1.jpg", "port2.jpg", "port3.jpg", "port4.jpg", "port5.jpg", "port6.jpg", "port7.jpg", "port8.jpg",
+        "port9.jpg", "port10.jpg", "port11.jpg", "port12.jpg", "port13.jpg", "port14.jpg", "port15.jpg", "port16.jpg", "port17.jpg", "port18.jpg", "port19.jpg",
+        "port20.jpg"];
+
+    var element = document.getElementById("col1");
+    console.log(imgFiles.length);
+    for (i = 0; i < 6; i++) {
+        htmlStr = '<div class="img-card">';
+        htmlStr += '<img src="img/' + imgFiles[i] + '" style="width:100%">';
+        htmlStr += '</div>';
+        element.innerHTML += htmlStr;
+    }
+
+    var element = document.getElementById("col2");
+    for (i = 7; i < 13; i++) {
+        htmlStr = '<div class="img-card">';
+        htmlStr += '<img src="img/' + imgFiles[i] + '" style="width:100%">';
+        htmlStr += '</div>';
+        element.innerHTML += htmlStr;
+    }
+
+    var element = document.getElementById("col3");
+    for (i = 14; i < 20; i++) {
+        htmlStr = '<div class="img-card">';
+        htmlStr += '<img src="img/' + imgFiles[i] + '" style="width:100%">';
+        htmlStr += '</div>';
+        element.innerHTML += htmlStr;
+    }
+
+
+</script>
